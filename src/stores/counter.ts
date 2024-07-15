@@ -12,6 +12,13 @@ export const useCounterStore = defineStore('counter', {
     increment() {
       this.clicks++;
     },
+    decrease() {
+      if (this.clicks > 0) {
+        this.clicks--;
+      } else {
+        console.warn('Cannot decrement clicks below zero');
+      }
+    },
   },
   getters: {
     totalClicks(): number {

@@ -1,0 +1,32 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background-color: #f5f5f5;
+  font-family: "Montserrat", sans-serif;
+}
+
+.content {
+  padding: 0 15px;
+  max-width: 1185px;
+  width: 100%;
+  margin: 0 auto;
+  @media screen and (min-width: 858px) {
+    & {
+      max-width: 858px;
+    }
+  }
+}
+
+.block {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 17.5px 20px;
+  margin-bottom: 15px;
+}
+
+
